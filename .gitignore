@@ -1,0 +1,41 @@
+node_modules/
+dist/
+.validation-dist/
+.DS_Store
+*.log
+runtime-data/
+.env
+.env.*
+!.env.example
+tmp/docs/handoffs/
+
+# Local operational records and scratch work (never publish).
+tmp/
+docs/handoffs/
+docs/validation/
+
+# Persistent data, database backups, credentials, and runtime envelopes.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.sql.gz
+*.dump
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+secrets/
+credentials/
+.pm2/
+dump.pm2
+
+# Test output and editor state.
+coverage/
+playwright-report/
+test-results/
+.vscode/
+.idea/
+*.tsbuildinfo

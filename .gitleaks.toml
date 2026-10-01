@@ -1,0 +1,11 @@
+title = "Level Up source scanning"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Exact synthetic legacy invite fixture, used only by two unit tests"
+condition = "AND"
+paths = ['''(?:^|/)src/(?:invites|storage)\.test\.ts$''']
+regexTarget = "secret"
+regexes = ['''^AbCdEf0123456789_-AbCdEf0123456789_-AbCdE12$''']
